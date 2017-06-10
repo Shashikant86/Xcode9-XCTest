@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var xctestLabel: UILabel!
+    @IBAction func whatNewButton(_ sender: Any) {
+        xctestLabel.text = "There is a lot"
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
