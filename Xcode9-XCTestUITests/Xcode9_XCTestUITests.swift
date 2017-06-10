@@ -1,5 +1,5 @@
 //
-//  Xcode9_XCTestUITests.swift
+//  Xcode9_XCTestUITests.swift/
 //  Xcode9-XCTestUITests
 //
 //  Created by Shashikant Jagtap on 10/06/2017.
@@ -30,11 +30,11 @@ class Xcode9_XCTestUITests: XCTestCase {
     }
     
     func testXCUISiriService() {
-        XCUIApplication().launch()
         XCUIDevice().siriService.activate(voiceRecognitionText: "Open News")
     }
     
     func testXCWaiterfeatures() {
+        XCUIApplication().launch()
         let whatsNewButton = XCUIApplication().buttons["New"]
         whatsNewButton.tap()
         XCTAssertTrue(waiterResultWithExpextation(whatsNewButton) == .completed)
@@ -67,7 +67,7 @@ class Xcode9_XCTestUITests: XCTestCase {
             let screen = XCUIScreen.main
             let fullscreenshot = screen.screenshot()
             let fullScreenshotAttachment = XCTAttachment(screenshot: fullscreenshot)
-            fullScreenshotAttachment.lifetime = .deleteOnSuccess
+            fullScreenshotAttachment.lifetime = .keepAlways
             activity.add(fullScreenshotAttachment)
         }
     }
