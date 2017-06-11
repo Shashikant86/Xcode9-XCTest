@@ -48,7 +48,7 @@ class Xcode9_XCTestUITests: XCTestCase {
         print(settingsApp.state.rawValue)
     }
     
-    func testActivitiesScreenShotsAttachments () {
+    func testActivitiesScreenShotsAttachments() {
         XCTContext.runActivity(named: "Given I launch an Xcode9-XCTest app") { _ in
             XCUIApplication().launch()
         }
