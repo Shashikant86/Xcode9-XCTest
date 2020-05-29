@@ -1,8 +1,4 @@
-//
-//  Xcode9_XCTestUITests.swift/
-//  Xcode9-XCTestUITests
-//
-//  Created by Shashikant Jagtap on 10/06/2017.
+on 10/06/2017.
 //  Copyright © 2017 Shashikant Jagtap. All rights reserved.
 //
 
